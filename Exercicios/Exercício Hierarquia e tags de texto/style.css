@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*
+    Tudo que em HTML é id     = em CSS é #
+    Tudo que em HTML é class  = em CSS é .
+*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #F1D8C9, #F2C3A7);
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    padding: 10px; /* acolchoamento, não deixar o texto grudado no background */
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(129, 77, 5, 0.726);
+}
+
+h1#main{
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid red;
+    text-align: center;
+    height: 150px;
+    width: 200px;
+}
+
+div#d4 > p {
+    display: none;
+}
+
+div#d4:hover > p {
+    display: block;
+}
+
+div#d4:hover {
+    color: red;
+    background-color: lightgray;
+}
+
+div:hover{ /*os dois pontos ':' servem para se referir a uma pseudo classe*/
+    background-color: rgb(128, 211, 128);
+}
+
+.dropdown {
+    text-align: center;
+}
