@@ -15,7 +15,7 @@ body{
 
 header{
     text-align: center;
-    font-size: x-large;
+    font-size: 40px;
     color: whitesmoke;
     text-shadow: 2px 2px 0 var(--cor4);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -24,7 +24,14 @@ header{
     padding-top: 10px;
     margin-bottom: 0px;
     background-image: url("imagens/2\ cavalos\ menu\ novo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*      Shorthand - background
+        color > image > position > repeat > size > attachment
     
+    */
 }
 
 #headertitle {
@@ -33,15 +40,17 @@ header{
 }
 
 #menu{ 
+    font-size: 25px;
     background-color: var(--cor5);
     padding-right: 10px;
     padding: 4px;
     margin-bottom: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 216px;
+    margin-top: 117px;
 }
 
 #menu > a {
+    text-shadow: none;
     text-decoration: none;
     color: black;
     margin: 30px;
