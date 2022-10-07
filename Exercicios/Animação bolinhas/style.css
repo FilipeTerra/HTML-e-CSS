@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 71, 71);
+    min-height: 100vh;
+}
+
+.desafio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 230px;
+    height: 230px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: yellowgreen;
+    border-radius: 5%;
+}
+
+.botao{
+    border-radius: 100%;
+    background-color: rgb(73, 71, 71);
+    border: 2px solid whitesmoke;
+    height: 45px;
+    width: 45px;
+    margin: 7px;
+    padding: 0%;
+    cursor: pointer;
+}
+
+#move{
+    border-radius: 100%;
+    position: absolute;
+    top: 49%;
+    left: 46%;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    width: 35px;
+}
+  @keyframes color-change2-1 {
+    0% {
+        background: blue;
+      }
+      100% {
+        background: yellowgreen;
+      }
+}
+
+@keyframes color-change3-1 {
+    0% {
+        background: red;
+      }
+      50%{
+        background: rgba(77, 77, 224, 0.637);
+    }
+      100% {
+        background: yellowgreen;
+      }
+}
+
+@keyframes color-change1-2 {
+    0% {
+      background: yellowgreen;
+    }
+    100% {
+      background: blue;
+    }
+}
+
+@keyframes color-change3-2 {
+    0% {
+      background: red;
+    }
+    100% {
+      background: blue;
+    }
+}
+
+@keyframes color-change1-3 {
+    0% {
+      background: yellowgreen;
+    }
+    50%{
+        background: rgba(77, 77, 224, 0.637);
+    }
+    100% {
+      background: red;
+    }
+}
+
+@keyframes color-change2-3 {
+    0% {
+      background: blue;
+    }
+    100% {
+      background: red;
+    }
+}
+
+

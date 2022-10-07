@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Desafio</title>
+    </head>
+    <body>
+        <div class="desafio">
+            <button class="botao" id="b1" onclick="fb1()"><div id="move"></div></button>
+            <button class="botao" id="b2" onclick="fb2()"></button>
+            <button class="botao" id="b3" onclick="fb3()"></button>
+        </div>
+    </body>
+    <script>
+        let bolinha = document.getElementById('move');
+        let fundo = document.getElementsByClassName('desafio');
+        let aux = 1;
+
+        function fb1(){
+            if (aux == 2){
+                bolinha.style.transform = "translateX(0px)";
+                bolinha.style.transition = "1s";
+                fundo[0].style.animation = "1s linear normal color-change2-1";
+                fundo[0].style.backgroundColor = "yellowgreen";
+            }
+            if (aux == 3){
+                bolinha.style.transform = "translateX(0px)";
+                bolinha.style.transition = "2.5s";
+                fundo[0].style.animation = "2s linear normal color-change3-1";
+                fundo[0].style.backgroundColor = "yellowgreen";
+            }
+            return aux = 1;
+        }
+
+        function fb2(){
+            if (aux == 1){
+                bolinha.style.transform = "translateX(59px)";
+                bolinha.style.transition = "1s";
+                fundo[0].style.animation = "1s linear normal color-change1-2";
+                fundo[0].style.backgroundColor = "blue";
+            }
+            if (aux == 3){
+                bolinha.style.transform = "translateX(59px)";
+                bolinha.style.transition = "1s";
+                fundo[0].style.animation = "1s linear normal color-change3-2";
+                fundo[0].style.backgroundColor = "blue";
+            }
+            return aux = 2;
+        }
+
+        function fb3(){
+            if (aux == 2){
+                bolinha.style.transform = "translateX(118px)";
+                bolinha.style.transition = "1s";
+                fundo[0].style.animation = "1s linear normal color-change2-3";
+                fundo[0].style.backgroundColor = "red";
+            }
+            if (aux == 1){
+                bolinha.style.transform = "translateX(118px)";
+                bolinha.style.transition = "2.5s";
+                fundo[0].style.animation = "2s linear normal color-change1-3";
+                fundo[0].style.backgroundColor = "red";
+            }
+            return aux = 3;
+        }
+
+    </script>
+</html>
